@@ -1,7 +1,7 @@
 # Structured Streaming of Sensor Data
 This project consist in the creation of a Data Pipeline that collects data from Arduino sensors and sends them to a cloud-based storage system, where a Spark cluster can be used for real-time data processing and analysis. List of tools used:
 
-<img width="784" alt="image" src="https://github.com/Frussen/salary_predictor/assets/99719304/905aa6a9-98e8-4672-b14b-618d63828c76">
+<img width="784" alt="image" src="[https://github.com/Frussen/salary_predictor/assets/99719304/905aa6a9-98e8-4672-b14b-618d63828c76](https://github.com/Frussen/structured_streaming_sensor_data/blob/main/files/Structured%20Streaming%20Ironhack%20Project.png)">
 
 
 ### Arduino
