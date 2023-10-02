@@ -1,8 +1,9 @@
 <h1 align="center">Structured Streaming of Sensor Data</h1>
 </br>
-This project consist in the creation of a pipeline for the flow of sensor data from an Arduino console to a Databricks Delta Table, where a Spark cluster can be used for real-time data processing and analysis.
+<p align="center">This project consist in the creation of a pipeline for the flow of sensor data from an Arduino console to a Databricks Delta Table, where a Spark cluster can be used for real-time data processing and analysis.</p>
 
 </br>
+
 <img width="auto" alt="image" src="https://github.com/Frussen/structured_streaming_sensor_data/blob/main/files/Structured%20Streaming%20Ironhack%20Project.png">
 </br>
 
