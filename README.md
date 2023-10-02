@@ -1,8 +1,10 @@
-# Structured Streaming of Sensor Data
-This project consist in the creation of a pipeline for the flow of sensor data from an Arduino console to a cloud-based storage location (Databricks Delta Table), where a Spark cluster can be used for real-time data processing and analysis.
+<h1 align="center">Structured Streaming of Sensor Data</h1>
+</br>
+This project consist in the creation of a pipeline for the flow of sensor data from an Arduino console to a Databricks Delta Table, where a Spark cluster can be used for real-time data processing and analysis.
 
+</br>
 <img width="auto" alt="image" src="https://github.com/Frussen/structured_streaming_sensor_data/blob/main/files/Structured%20Streaming%20Ironhack%20Project.png">
-
+</br>
 
 ### Arduino
 Arduino is an open-source electronics platform that consists of both hardware and software components, designed for creating interactive and programmable electronic projects. Sensors used:
@@ -18,16 +20,19 @@ EMQX is an open-source, distributed MQTT messaging broker that can support milli
 In this project an EMQX Cloud service enabled the connection of the Arduino signals to the Kafka Server thanks to the Data Bridge to Kafka feature.
 The connection could then be easily tested with the help of the MQTTX client toolbox for desktop.
 
+<img width="auto" alt="image" src="https://github.com/Frussen/structured_streaming_sensor_data/blob/main/files/emqx_data_bridge.png">
+</br>
+
 ### Kafka
 Kafka is an open-source distributed event streaming platform that allows real-time data ingestion, processing, and distribution across applications and systems.
 
 
-### Spark
-Apache Spark is an open-source unified analytics engine for large-scale data processing. It provides an interface for programming clusters with implicit data parallelism and fault tolerance.
-
-
 ### AWS
 Cloud computing platform that provides a wide range of scalable and flexible cloud services and infrastructure.
+
+
+### Spark
+Apache Spark is an open-source unified analytics engine for large-scale data processing. It provides an interface for programming clusters with implicit data parallelism and fault tolerance.
 
 
 ### Databricks
