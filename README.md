@@ -9,8 +9,14 @@ Arduino is an open-source electronics platform that consists of both hardware an
 - DHT11: for temperature and humidity observations
 - SR04: sonar sensor for high frequence measuring of the nearest object distance
 - PIR: Passive Infra-Red sensor for movement detection
-
 </br>
+
+### EMQX & MQTTX
+MQTT is a lightweight, publish-subscribe, machine to machine network protocol for message queuing service. It is designed for connections with remote locations that have devices with resource constraints or limited network bandwidth, such as in the Internet of Things.
+EMQX is an open-source, distributed MQTT messaging broker that can support millions of concurrent MQTT connections.
+
+In this project an EMQX Cloud service enabled the connection of the Arduino signals to the Kafka Server thanks to the Data Bridge to Kafka feature.
+The connection could then be easily tested with the help of the MQTTX client toolbox for desktop.
 
 ### Kafka
 Kafka is an open-source distributed event streaming platform that allows real-time data ingestion, processing, and distribution across applications and systems.
