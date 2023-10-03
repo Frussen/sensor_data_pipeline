@@ -68,7 +68,9 @@ pir_stream = (spark.readStream
 
 # Start a writeStream to a Delta Table
 (pir_stream
-    .selectExpr("DATE_FORMAT(timestamp, 'dd/MM/yyyy HH:mm:ss') as timestamp", "'new detection' as movement")
+    .selectExpr(
+      "DATE_FORMAT(timestamp, 'dd/MM/yyyy HH:mm:ss') as timestamp", "'new detection' as movement"
+    )
     .writeStream
     .format("delta")
     .outputMode("append")
