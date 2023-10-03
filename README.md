@@ -54,7 +54,7 @@ For this project AWS served as the Cloud Service Provider for the Databricks env
 ## Spark
 Apache Spark is an open-source unified analytics engine for large-scale data processing. It provides an interface for programming clusters with implicit data parallelism and fault tolerance.
 
-for each of the different topics and follow up with a writeStream to a Delta Table, in which the data was finally stored
+The Spark cluster allowed the start of read and write streams that respectively tuned to the message queues of the different Kafka topics and moved the payload values to a Catalog Delta Table, in which the data was finally stored in a Delta Lake format.
 
 ```python
 # Start a readStream from the Kafka Server
@@ -67,7 +67,8 @@ pir_stream = (spark.readStream
 )
 
 # Start a writeStream to a Delta Table
-(pir_stream.selectExpr("DATE_FORMAT(timestamp, 'dd/MM/yyyy HH:mm:ss') as timestamp", "'new detection' as movement")
+(pir_stream
+    .selectExpr("DATE_FORMAT(timestamp, 'dd/MM/yyyy HH:mm:ss') as timestamp", "'new detection' as movement")
     .writeStream
     .format("delta")
     .outputMode("append")
@@ -81,5 +82,5 @@ pir_stream = (spark.readStream
 ## Databricks
 Databricks is a comprehensive, cloud-based (AWS) data analytics and machine learning platform that offers the scalability and automation needed to handle complex data workflows.
 
-The Databricks Notebook's versatility and ease of use were leveraged to test the Kafka connection and start the mentiond readStream and writeStream tasks tasks. Databriks offered a platform in which it was possible not only to integrate different systems and technologies, but also to perform basic analysis to uncover some of the data's trends and insights.
+The Databricks Notebook's versatility and ease of use were leveraged to test the Kafka connection and start the mentiond readStream and writeStream tasks. Databriks offered a platform in which it was possible not only to integrate different systems and technologies, but also to perform basic analysis to uncover some of the data's trends and insights.
 
