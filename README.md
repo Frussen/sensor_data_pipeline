@@ -13,6 +13,7 @@ Arduino is an open-source electronics platform that consists of both hardware an
 - DHT11: for temperature and humidity observations
 - SR04: sonar sensor for high frequence measuring of the nearest object distance
 - PIR: Passive Infra-Red sensor for movement detection
+<img width="auto" alt="image" src="https://github.com/Frussen/structured_streaming_sensor_data/blob/main/files/arduino.jpeg">
 </br>
 
 
