@@ -86,5 +86,5 @@ pir_stream = (spark.readStream
 ## Databricks
 Databricks is a comprehensive, cloud-based (AWS) data analytics and machine learning platform that offers the scalability and automation needed to handle complex data workflows.
 
-The Databricks Notebook's versatility and ease of use were leveraged to test the Kafka connection and start the mentiond readStream and writeStream tasks. Databriks offered a platform in which it was possible not only to integrate different systems and technologies, but also to perform basic analysis to uncover some of the data's trends and insights.
+The Databricks Notebook's versatility and ease of use were leveraged to test the Kafka connection and start the mentioned readStream and writeStream tasks. Databriks offered a platform in which it was possible not only to integrate different systems and technologies, but also to perform basic analysis to uncover some of the data's trends and insights.
 
