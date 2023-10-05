@@ -28,6 +28,7 @@ The connection could then be easily tested with the help of the MQTTX client too
 </br>
 <img width="auto" alt="image" src="https://github.com/Frussen/structured_streaming_sensor_data/blob/main/files/emqx_data_bridge.png">
 </br>
+</br>
 
 
 ## Kafka
@@ -49,10 +50,10 @@ $ bin/kafka-server-start.sh config/server.properties
 Cloud computing platform that provides a wide range of scalable and flexible cloud services and infrastructure.
 
 For this project AWS served as the Cloud Service Provider for the Databricks environment, for the Kafka broker and for the EMQX Cloud service. The three resulting VPC where then Peer Connected so that, after configuring the necessary Route Tables and Security Groups, the respective compute instances could seamlessy comunicate with one another using their private IPs.
+
 </br>
 <img width="auto" alt="image" src="https://github.com/Frussen/structured_streaming_sensor_data/blob/main/files/aws_inbound_rules.png">
 </br>
-
 
 ## Spark
 Apache Spark is an open-source unified analytics engine for large-scale data processing. It provides an interface for programming clusters with implicit data parallelism and fault tolerance.
@@ -89,6 +90,8 @@ pir_stream = (spark.readStream
 Databricks is a comprehensive, cloud-based (AWS) data analytics and machine learning platform that offers the scalability and automation needed to handle complex data workflows.
 
 The Databricks Notebook's versatility and ease of use were leveraged to test the Kafka connection and start the readStream and writeStream tasks. Databriks offered a platform in which it was possible not only to integrate different systems and technologies, but also to perform basic analysis to uncover some of the data's trends and insights.
+
 </br>
 <img width="auto" alt="image" src="https://github.com/Frussen/structured_streaming_sensor_data/blob/main/files/dashboard_temp_hum.png">
+</br>
 </br>
