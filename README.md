@@ -25,9 +25,9 @@ EMQX is an open-source, distributed MQTT messaging broker that can support milli
 
 In this project an EMQX Cloud service enabled the connection of the Arduino signals to the Kafka Server thanks to the Data Bridge to Kafka feature.
 The connection could then be easily tested with the help of the MQTTX client toolbox for desktop.
+
 </br>
 <img width="auto" alt="image" src="https://github.com/Frussen/structured_streaming_sensor_data/blob/main/files/emqx_data_bridge.png">
-</br>
 </br>
 
 
