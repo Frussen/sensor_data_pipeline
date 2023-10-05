@@ -34,7 +34,7 @@ The connection could then be easily tested with the help of the MQTTX client too
 ## Kafka
 Kafka is an open-source distributed event streaming platform that allows real-time data ingestion, processing, and distribution across applications and systems.
 
-Kafka was installed on a AWS EC2 instance through an SSH connection and its VPC was then Peer Connected to the Databricks and EMQX ones, allowing comunication between the systems.
+Kafka was installed on a AWS EC2 instance through an SSH connection and its VPC was then Peer Connected to the Databricks and EMQX ones, allowing communication between the systems.
 Four different topics where created for each type of measurement so that the messages could asynchronously flow to the destination.
 
 ```sh
