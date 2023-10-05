@@ -49,7 +49,7 @@ $ bin/kafka-server-start.sh config/server.properties
 ## AWS
 Cloud computing platform that provides a wide range of scalable and flexible cloud services and infrastructure.
 
-For this project AWS served as the Cloud Service Provider for the Databricks environment, for the Kafka broker and for the EMQX Cloud service. The three resulting VPC where then Peer Connected so that, after configuring the necessary Route Tables and Security Groups, the respective compute instances could seamlessy comunicate with one another using their private IPs.
+For this project AWS served as the Cloud Service Provider for the Databricks environment, for the Kafka broker and for the EMQX Cloud service. The three resulting VPC where then Peer Connected so that, after configuring the necessary Route Tables and Security Groups, the respective compute instances could seamlessly communicate with one another using their private IPs.
 
 </br>
 <img width="auto" alt="image" src="https://github.com/Frussen/structured_streaming_sensor_data/blob/main/files/aws_inbound_rules.png">
